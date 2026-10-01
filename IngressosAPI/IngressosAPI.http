@@ -1,0 +1,6 @@
+@IngressosAPI_HostAddress = http://localhost:5157
+
+GET {{IngressosAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

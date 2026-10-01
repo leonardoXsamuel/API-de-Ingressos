@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4HBIulCNVJE=",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\C#\\API de Ingressos\\IngressosAPI\\IngressosAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.12\\microsoft.aspnetcore.openapi.10.0.12.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.openapi\\2.12.0\\microsoft.openapi.2.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
