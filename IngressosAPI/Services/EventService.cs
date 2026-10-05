@@ -18,11 +18,19 @@ public class EventService : IEventService
         _repository = repository;
     }
 
+    public async Task<EventResponseDTO> CreateEvent(EventCreateDTO dto)
+    {
+        var @event = _mapper.Map<Event>(dto);
+        var responseDTO = await _repository.CreateEvent(@event);
+
+        return _mapper.Map<EventResponseDTO>(responseDTO);
+    }
+
     public async Task<EventResponseDTO> GetEventAsyncById(long id)
     {
         //throw new NotImplementedException();
 
-        var @event =  await _repository.GetEventByIdAsync(id);
+        var @event = await _repository.GetEventByIdAsync(id);
         var responseDTO = _mapper.Map<EventResponseDTO>(@event);
 
         return responseDTO;
