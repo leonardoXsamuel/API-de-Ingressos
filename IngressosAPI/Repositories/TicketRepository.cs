@@ -15,18 +15,17 @@ public class TicketRepository
     }
         
     // create methods
-    public async Task<User> GetUserByIdAsync(long Id)
+    public async Task<Ticket> GetTicketByIdAsync(long Id)
     {
-        User user = await _dbContext.Users.FindAsync(Id);
-        return user;
+        return await _dbContext.Tickets.FindAsync(Id);
     }
     
-    public async Task<User> PostUser (User user)
+    public async Task<Ticket> BuyTicket (Ticket ticket)
     {
-        await _dbContext.Users.AddAsync(user);
+        await _dbContext.Tickets.AddAsync(ticket);
         await _dbContext.SaveChangesAsync();
      
-        return await _dbContext.Users.FindAsync(user.UserId);
+        return await _dbContext.Tickets.FindAsync(ticket.TicketId);
     }
 
 }
