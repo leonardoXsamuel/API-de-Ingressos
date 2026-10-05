@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IngressosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3d44f5c9b78df2969909d116fd2b67d8809751b")]
 [assembly: System.Reflection.AssemblyProductAttribute("IngressosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IngressosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

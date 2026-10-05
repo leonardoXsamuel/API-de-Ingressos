@@ -1,3 +1,5 @@
+using IngressosAPI.Profiles;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -13,6 +15,15 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+// add dbContext in the program.cs
+//builder.Services.AddDbContext<AppContext>(options => options
+
+// mappers
+builder.Services.AddAutoMapper(
+    cfg => { },
+    typeof(UserProfile).Assembly
+);
 
 app.UseHttpsRedirection();
 
