@@ -8,8 +8,8 @@ public class TicketProfile : Profile
 {
     public TicketProfile()
     {
-        CreateMap<Ticket, EventResponseDTO>().ReverseMap();
-        CreateMap<Ticket, EventCreateDTO>().ReverseMap();
-        CreateMap<Ticket, EventUpdateDTO>().ReverseMap();
+        CreateMap<Ticket, TicketResponseDTO>().ReverseMap();
+        CreateMap<Ticket, TicketCreateDTO>().ReverseMap();
+        CreateMap<Ticket, TicketUpdateDTO>().ReverseMap();
     }
 }
