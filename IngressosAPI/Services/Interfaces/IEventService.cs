@@ -7,6 +7,4 @@ public interface IEventService
 {
     public Task<EventResponseDTO> GetEventAsyncById(long id);
     public Task<EventResponseDTO> CreateEvent(EventCreateDTO dto);
-
-
 }
